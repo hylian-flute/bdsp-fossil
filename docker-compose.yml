@@ -1,0 +1,17 @@
+version: "3"
+services:
+  runner:
+    image: rust:1.57.0-alpine
+    user: $SUDO_UID:$SUDO_GID
+    volumes:
+      - ".:/home/app"
+    working_dir: /home/app
+    command: ["cargo", "run"]
+  builder:
+    image: rust:1.57.0-alpine
+    user: $SUDO_UID:$SUDO_GID
+    volumes:
+      - ".:/home/app"
+    working_dir: /home/app
+    command: ["cargo", "build", "--release"]
+

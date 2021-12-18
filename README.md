@@ -1,5 +1,5 @@
 ## ブログ記事
-https://charines.hatenablog.com/entry/2021/12/18/183724
+https://charines.hatenablog.com/entry/2021/12/18/183739
 
 ## 定数・変数
 ### `WALL_HIT_POINT`
